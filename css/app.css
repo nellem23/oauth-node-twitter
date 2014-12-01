@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-weight: 900;
+	color: #55acee;
+}
+
+.panel h1{
+	color: #55acee;
+}
+
+h2,
+h3 {
+	font-weight: 700;
+}
+
+.panel h3 {
+	color: #222222;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
