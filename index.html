@@ -1,276 +1,253 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Twitter JS Node</title>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Twitter JS Node</title>
 
-  	<script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script type="js/jquery/jquery.js"></script>
-    <script type="js/auth.js"></script>
+	  	<script src="js/vendor/jquery.js"></script>
+	    <script src="js/foundation.min.js"></script>
+	    <script type="js/auth.js"></script>
+	    <script src="js/vendor/modernizr.js"></script>
 
-    <link rel="stylesheet" href="css/foundation.css"/>
-    <link rel="stylesheet" href="css/app.css"/>
-	<script src="js/vendor/modernizr.js"></script>
-</head>
-<body>
+	    <link rel="stylesheet" href="css/foundation.css"/>
+	    <link rel="stylesheet" href="css/app.css"/>
+	</head>
 
+	<body>
+	  <div class="row">
+	    <div class="large-12 columns">
+	      <div class="panel">
+	        <h1>Twitter + Node.js</h1>
+	      </div>
+	    </div>
+	  </div>
+	   
+	  <div class="row search">
+	  	<div class="large-12 columns">
+	      <label>
+	        <input type="text" placeholder="Search" class="search" value="search" />
+	      </label>
+	      <a href="#" class="button [radius round]">Show 'em</a>
+		<!-- Radius Classes -->
+	    </div>
+	  
+	    <!-- <div class="large-3 columns ">
+	      <div class="panel">
+	        <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
+	        <h5><a href="#">Your Name</a></h5>
+	          <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+	          <section class="section">
+	            <h5 class="title"><a href="#">Section 1</a></h5>
+	          </section>
+	          <section class="section">
+	            <h5 class="title"><a href="#">Section 2</a></h5>
+	          </section>
+	          <section class="section">
+	            <h5 class="title"><a href="#">Section 3</a></h5>
+	          </section>
+	          <section class="section">
+	            <h5 class="title"><a href="#">Section 4</a></h5>
+	          </section>
+	          <section class="section">
+	            <h5 class="title"><a href="#">Section 5</a></h5>
+	          </section>
+	          <section class="section">
+	            <h5 class="title"><a href="#">Section 6</a></h5>
+	          </section>
+	        </div> -->
+	 
+	      </div>
+	    </div>
+	    
+	     
+	    <div class="row"> 
+	    	<div class="large-12 columns data">
+		  		<h3>Feed</h3>
+	       
+		      <!-- <div class="row">
+		        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+		        <div class="large-10 columns">
+		          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+		          <ul class="inline-list">
+		            <li><a href="">Reply</a></li>
+		            <li><a href="">Share</a></li>
+		          </ul>
+		 
+		 
+		          <h6>2 Comments</h6>
+		          <div class="row">
+		            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
+		            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+		          </div>
+		          <div class="row">
+		            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
+		            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+		          </div>
+		        </div>
+		      </div>
+		       
+		 
+		      <hr/>
+		 
+		       
+		      <div class="row">
+		        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+		        <div class="large-10 columns">
+		          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+		          <ul class="inline-list">
+		            <li><a href="">Reply</a></li>
+		            <li><a href="">Share</a></li>
+		          </ul>
+		        </div>
+		      </div>
+		       
+		 
+		      <hr/>
+		 
+		       
+		      <div class="row">
+		        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+		        <div class="large-10 columns">
+		          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+		          <ul class="inline-list">
+		            <li><a href="">Reply</a></li>
+		            <li><a href="">Share</a></li>
+		          </ul>
+		 
+		 
+		          <h6>2 Comments</h6>
+		          <div class="row">
+		            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
+		            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+		          </div>
+		        </div>
+		      </div>
+		        -->
+	 
+	    </div>
+	 </div>
+	     
+	     
+	    <aside class="large-3 columns hide-for-small">
+	   <!--    <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
+	      <p><img src="http://placehold.it/300x440&text=[ad]"/></p> -->
+	    </aside>
+	 
+	  </div>
+	 
+	  <footer class="row">
+	    <div class="large-12 columns">
+	      <hr/>
+	      <div class="row">
+	        <div class="large-5 columns">
+	          <p>© Copyright Nelle McDade.</p>
+	        </div>
+	        <div class="large-7 columns">
+	          <ul class="inline-list right"> <!-- want to put trending links here -->
+	            <li><a href="#">Trending</a></li>
+	            <li><a href="#">Random</a></li>
+	            <li><a href="#">Gamergate</a></li>
+	            <li><a href="#">Kim Kardashian</a></li>
+	          
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	  </footer>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="panel">
-        <h1>Twitter + Node.js</h1>
-      </div>
-    </div>
-  </div>
+	<script>
+	//Import Lato as font
+	  WebFontConfig = {
+	    google: { families: [ 'Lato::latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })();
 
-   
-  <div class="row search">
-  
-  	<div class="large-12 columns">
-      <label>
-        <input type="text" placeholder="Search" class="search" value="search" />
-      </label>
-      <a href="#" class="button [radius round]">Show 'em</a>
-	<!-- Radius Classes -->
-    </div>
-     
-    <!-- <div class="large-3 columns ">
-      <div class="panel">
-        <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
-        <h5><a href="#">Your Name</a></h5>
-          <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-          <section class="section">
-            <h5 class="title"><a href="#">Section 1</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 2</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 3</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 4</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 5</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 6</a></h5>
-          </section>
-        </div> -->
- 
-      </div>
-    </div>
-    
-     
-    <div class="row">
-    	
-     
-    <div class="large-12 columns data">
- 
-	  		<h3>Feed</h3>
-       
-      <!-- <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
-        <div class="large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-          <ul class="inline-list">
-            <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
-          </ul>
- 
- 
-          <h6>2 Comments</h6>
-          <div class="row">
-            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
-            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
-          <div class="row">
-            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
-            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
-        </div>
-      </div>
-       
- 
-      <hr/>
- 
-       
-      <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
-        <div class="large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-          <ul class="inline-list">
-            <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
-          </ul>
-        </div>
-      </div>
-       
- 
-      <hr/>
- 
-       
-      <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
-        <div class="large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-          <ul class="inline-list">
-            <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
-          </ul>
- 
- 
-          <h6>2 Comments</h6>
-          <div class="row">
-            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
-            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
-        </div>
-      </div>
-        -->
- 
-    </div>
- </div>
-     
-     
-    <aside class="large-3 columns hide-for-small">
-   <!--    <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
-      <p><img src="http://placehold.it/300x440&text=[ad]"/></p> -->
-    </aside>
- 
-  </div>
- 
- 
-   
- 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-        <div class="large-5 columns">
-          <p>© Copyright Nelle McDade.</p>
-        </div>
-        <div class="large-7 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Random</a></li>
-            <li><a href="#">Gamergate</a></li>
-            <li><a href="#">Kim Kardashian</a></li>
-          
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-    
-<script src="js/vendor/jquery.js"></script>
-
+	//$(document).foundation({
+		var OAuth = require('../lib/OAuth');
+		var oauth = new OAuth.OAuth(
+		      'https://api.twitter.com/oauth/request_token',
+		      'https://api.twitter.com/oauth/access_token',
+		      'axbqVGaMYg2rM2qdSkdEjTmNe',
+		      'VICnK31t9yIRg5q98evBbY0k8vtMhaq9bXQ6JIcYZ4bjiVDMbb',
+		      '1.0A',
+		      null,
+		      'HMAC-SHA1'
+		    );
+		    oauth.get(
+		      'https://api.twitter.com/1.1/trends/place.json?id=23424977',
+		      '332459563-ptzsmUitlpwsU5SFwpMwv7H2hJTlMxq87iJvMPhw', 
+		      //you can get it at dev.twitter.com for your own apps
+		      'CaETKBmvcdb0qzCy8WpJXp1VqRTautFY8pjvak8jCimLA', 
+		      //you can get it at dev.twitter.com for your own apps
+		      function (e, data, res){
+		        if (e) console.error(e);        
+		        console.log(require('util').inspect(data));
+		        done();      
+		      });    
 	
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Lato::latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
+		console.log('done with oAuth');
 
-<script>
+			//Searching for twitter
 
-  $(document).foundation();
+				var Twitter = require('../lib/Twitter');
 
+				var twitterSearchClient = new Twitter.SearchClient(
+				    'axbqVGaMYg2rM2qdSkdEjTmNe',
+				    'VICnK31t9yIRg5q98evBbY0k8vtMhaq9bXQ6JIcYZ4bjiVDMbb',
+				    '332459563-ptzsmUitlpwsU5SFwpMwv7H2hJTlMxq87iJvMPhw',
+				    'CaETKBmvcdb0qzCy8WpJXp1VqRTautFY8pjvak8jCimLA'
+				);
 
-var OAuth = require('OAuth');
-var oauth = new OAuth.OAuth(
-      'https://api.twitter.com/oauth/request_token',
-      'https://api.twitter.com/oauth/access_token',
-      'axbqVGaMYg2rM2qdSkdEjTmNe',
-      'VICnK31t9yIRg5q98evBbY0k8vtMhaq9bXQ6JIcYZ4bjiVDMbb',
-      '1.0A',
-      null,
-      'HMAC-SHA1'
-    );
-    oauth.get(
-      'https://api.twitter.com/1.1/trends/place.json?id=23424977',
-      '332459563-ptzsmUitlpwsU5SFwpMwv7H2hJTlMxq87iJvMPhw', 
-      //you can get it at dev.twitter.com for your own apps
-      'CaETKBmvcdb0qzCy8WpJXp1VqRTautFY8pjvak8jCimLA', 
-      //you can get it at dev.twitter.com for your own apps
-      function (e, data, res){
-        if (e) console.error(e);        
-        console.log(require('util').inspect(data));
-        done();      
-      });    
-});
+				twitterSearchClient.search({'q': 'node.js'}, function(error, result) {
+				    if (error)
+				    {
+				        console.log('Error: ' + (error.code ? error.code + ' ' + error.message : error.message));
+				    }
 
-console.log('done with oAuth');
+				    if (result) {
+						// function(){
+					    	$("#search").html("Results have been grabbed! <br />");
+					    		for(i=0; i<result.length; i++) {
+							    	$("#search").append("<p>" + data[i].text) +"</p>";
+				              		$("#search").append("<p>" + data[i].created_at +"</p>");
+		                        }
+	                       //},
+				        console.log(result);
+				    }
+				});
+		        
+		        $.ajax({   
+		           url : "http://twitter.com/statuses/user_timeline/userid.json?callback=?",
+		           dataType : "jsonp",
+		           timeout:15000,
+		    
+		            success : function(data)
+		            { 
+		              $("#data").html("Data successfully obtained! <br />");
+		              for (i=0; i<data.length; i++)
+		                           {
+		              $("#data").append("<p>" + data[i].text) +"</p>";
+		              $("#data").append("<p>" + data[i].created_at +"</p>");
+		                           }
+		                       },
+		                
+		               error : function()
+		               { 
+		                   alert("Failure!"); 
+		               },
+		        
+		          });
+		              console.log('Script done');
+	    //  });
 
-
-	//Searching for twitter
-
-		var Twitter = require('../lib/Twitter');
-
-		var twitterSearchClient = new Twitter.SearchClient(
-		    'axbqVGaMYg2rM2qdSkdEjTmNe',
-		    'VICnK31t9yIRg5q98evBbY0k8vtMhaq9bXQ6JIcYZ4bjiVDMbb',
-		    '332459563-ptzsmUitlpwsU5SFwpMwv7H2hJTlMxq87iJvMPhw',
-		    'CaETKBmvcdb0qzCy8WpJXp1VqRTautFY8pjvak8jCimLA'
-		);
-
-		twitterSearchClient.search({'q': 'node.js'}, function(error, result) {
-		    if (error)
-		    {
-		        console.log('Error: ' + (error.code ? error.code + ' ' + error.message : error.message));
-		    }
-
-		    if (result)
-		    {
-				function(){
-			    	$("#search").html("Results have been grabbed! <br />");
-			    		for(i=0; i<result.length; i++)
-			    		{
-			    	$("#search").append("<p>" + data[i].text) +"</p>";
-              		$("#search").append("<p>" + data[i].created_at +"</p>");
-                           }
-                       },
-		        console.log(result);
-		    }
-		});
-        
-        $.ajax({   
-           url : "http://twitter.com/statuses/user_timeline/userid.json?callback=?",
-           dataType : "json",
-           timeout:15000,
-    
-            success : function(data)
-            { 
-              $("#data").html("Data successfully obtained! <br />");
-              for (i=0; i<data.length; i++)
-                           {
-              $("#data").append("<p>" + data[i].text) +"</p>";
-              $("#data").append("<p>" + data[i].created_at +"</p>");
-                           }
-                       },
-                
-               error : function()
-               { 
-                   alert("Failure!"); 
-               },
-        
-          });
-              console.log('Script done');
-      
-    </script>
-
-  
-
-
-</body>
+	    </script>
+	</body>
 </html>

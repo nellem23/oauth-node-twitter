@@ -1,6 +1,7 @@
 //documentation from http://webapplog.com/node-js-oauth1-0-and-oauth2-0-twitter-api-v1-1-examples/comment-page-1/#comment-552
 //https://github.com/nellem23/node-twitter/blob/master/examples/example-search.js
-
+//https://github.com/ciaranj/node-oauth.git
+//https://github.com/nellem23/node-twitter.git
 //OAuth authorization for me
 
 var OAuth = require('OAuth');
